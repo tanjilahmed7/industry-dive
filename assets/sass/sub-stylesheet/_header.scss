@@ -1,0 +1,87 @@
+header {
+	padding: 20px 0 20px;
+	.search {
+		.input-group {
+			position: relative;
+			input {
+				width: 300px;
+				max-width: 100%;
+				border: 1px solid #eee;
+				background: #eee;
+				border-radius: 20px;
+				padding: 5px 10px;
+				font-size: 14px;
+				text-indent: 20px;
+			}
+			.input-group-append {
+				position: absolute;
+				left: 0;
+				top: 7px;
+				bottom: 0;
+				.btn {
+					border: 0;
+					background: transparent;
+					padding: 0 10px;
+					font-size: 14px;
+					color: #333;
+				}
+			}
+		}
+		// hide phone devices
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+	.logo {
+		h2 {
+			margin: 0;
+			text-align: center;
+			text-transform: uppercase;
+			a {
+				color: $text;
+				text-decoration: none;
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+		span {
+			color: $text;
+			text-align: center;
+			display: block;
+			font-size: 14px;
+		}
+	}
+	.btn {
+		float: right;
+
+		// hide phone devices
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+	.navbar {
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				a {
+					display: block;
+					padding: 10px 20px;
+					color: $text;
+					text-decoration: none;
+					&:hover {
+						color: $primary;
+					}
+				}
+			}
+		}
+
+		// hide phone devices
+		@media (max-width: 767px) {
+			display: none;
+		}
+	}
+}
